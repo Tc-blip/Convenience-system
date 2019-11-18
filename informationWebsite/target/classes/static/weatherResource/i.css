@@ -1,0 +1,27 @@
+.pageflip {
+	right: 0px;
+	float: right;
+	position: relative;
+	top: 0px
+}
+
+.pageflip IMG {
+	z-index: 99;
+	right: -3px;
+	width: 30px;
+	position: absolute;
+	top: -1px;
+	height: 30px;
+	ms-interpolation-mode: bicubic
+}
+
+.pageflip .msg_block {
+	right: 0px;
+	background: url(http://i.tq121.com.cn/i/weather2015/png/subscribe.png)
+		no-repeat right top;
+	overflow: hidden;
+	width: 25px;
+	position: absolute;
+	top: 0px;
+	height: 25px
+}
