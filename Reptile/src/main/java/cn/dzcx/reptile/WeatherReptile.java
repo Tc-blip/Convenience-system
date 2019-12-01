@@ -47,7 +47,7 @@ public class WeatherReptile {
 			List<DayWeather> list = new ArrayList<DayWeather>();
 			
 			CloseableHttpClient client = HttpClients.createDefault();
-			HttpGet httpGet = new HttpGet("http://api.weatherunlocked.com/api/forecast/us."+name+"?app_id=9f7a442c&app_key=5a37830ef10f82a4b94e487a11f2340f");
+			HttpGet httpGet = new HttpGet("http://api.weatherunlocked.com/api/forecast/us."+name+"?app_id=9f7a442c&app_key=API");
 			CloseableHttpResponse httpResponse = client.execute(httpGet);
 			if(httpResponse.getStatusLine().getStatusCode() == 200){
 				String data = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
@@ -108,7 +108,7 @@ public class WeatherReptile {
 			List<String> url = new ArrayList<String>();
 			
 			CloseableHttpClient createDefault = HttpClients.createDefault();
-			HttpGet httpGet = new HttpGet("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=1401dc1d469c4fc6b4db02c304219c27");
+			HttpGet httpGet = new HttpGet("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=API");
 			CloseableHttpResponse httpResponse = createDefault.execute(httpGet);
 			if(httpResponse.getStatusLine().getStatusCode() == 200){
 				String string = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
@@ -139,7 +139,7 @@ public class WeatherReptile {
 			List<String> conent = new ArrayList<String>();
 			
 			CloseableHttpClient createDefault = HttpClients.createDefault();
-			HttpGet httpGet = new HttpGet("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=1401dc1d469c4fc6b4db02c304219c27");
+			HttpGet httpGet = new HttpGet("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=API");
 			CloseableHttpResponse httpResponse = createDefault.execute(httpGet);
 			if(httpResponse.getStatusLine().getStatusCode() == 200){
 				String string = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
